@@ -31,24 +31,31 @@ I built this project to deeply understand how real crypto exchanges process mill
 *High-level block diagram — drawn in draw.io*
 
 ### Project Layout
-
+                       # (git-ignored) Build artifacts – Eclipse or CMake output
 ```
 crypto_matching_engine/
-├── include/                    # Public headers
-│   ├── orderentry/             # OrderParser, Validator, Factory, Router, ...
-│   ├── matchingengine/         # PriceLevel, OrderQueue, OrderBook, MatchEngine
-│   ├── cancelreplace/          # Cancel/Replace processors
-│   ├── trading/                # Trade, TradePublisher, MarketDataAggregator
-│   ├── feedhandler/            # FeedConnector, MessageParser, FeedDispatcher
-│   ├── config/                 # InstrumentRegistry, VenueConfig
-│   └── core/                   # Order.hpp, OrderEnums.hpp, ...
-├── src/                        # .cpp implementations
-├── tests/                      # GoogleTest files
-├── docs/                       # Architecture notes, UML diagrams, performance results
-│   └── diagrams/               # .drawio source + .png exports
 ├── CMakeLists.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
+├── include/                        # All public header files (.hpp) – this is the main public API
+│   ├── core/                       # Core domain models & enums (used project-wide)
+│   ├── orderentry/                 # Order entry & processing components
+│   ├── matchingengine/             # Core matching logic & order book structures
+│   ├── cancelreplace/              # Cancel and replace request handling
+│   ├── trading/                    # Trade events, publishing, and market data aggregation
+│   ├── feedhandler/                # External market feed connection & parsing
+│   └── config/                     # Instrument & venue configuration
+├── src/                            # All implementation files (.cpp) 
+│   ├── core/                      
+│   ├── orderentry/
+│   ├── matchingengine/
+│   ├── cancelreplace/
+│   ├── trading/
+│   ├── feedhandler/
+│   └── config/
+├── tests/                          # All unit & integration tests (GoogleTest)
+└── docs/                           # Documentation, notes, architecture decisions
+    └── diagrams/                   # UML diagrams, system block diagrams (.drawio + .png exports)
 ```
 
 ### Build Instructions
