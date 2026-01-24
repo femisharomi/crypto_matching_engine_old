@@ -45,7 +45,7 @@ FetchContent_MakeAvailable(json)
 add_executable(crypto_matching_engine)
 
 target_include_directories(crypto_matching_engine
-    PUBLIC ${CMAKE_SOURCE_DIR}/include
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 target_link_libraries(crypto_matching_engine
@@ -102,7 +102,7 @@ add_executable(crypto_matching_engine_regression_tests
 )
 
 target_include_directories(crypto_matching_engine_regression_tests
-    PRIVATE ${CMAKE_SOURCE_DIR}/include
+    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 target_link_libraries(crypto_matching_engine_regression_tests
