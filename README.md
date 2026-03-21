@@ -19,7 +19,6 @@ I built this project to deeply understand how real crypto exchanges process mill
 ### Tech Stack
 
 - **Language**: C++20 (with selected C++23 features where supported)  
-- **IDE**: Eclipse CDT (latest stable)  
 - **Build system**: CMake 3.30.2  
 - **Testing**: GoogleTest (latest release via FetchContent)  
 - **JSON parsing**: nlohmann/json (latest single-header via FetchContent)  
@@ -55,7 +54,7 @@ crypto_matching_engine/
 │   │   ├── feedhandler/
 │   │   └── config/
 │   └── tests/                          # All unit & integration tests (GoogleTest)
-├── build/                              # Build artifacts – Eclipse or CMake output
+├── build/                              # Build artifacts 
 └── docs/                               # Documentation, notes, architecture decisions
     └── diagrams/                       # UML diagrams, system block diagrams (.drawio + .png exports)
 ```
@@ -66,7 +65,6 @@ crypto_matching_engine/
 
 - CMake ≥ 3.30.2  
 - C++20 capable compiler (GCC 12+, Clang 15+, MSVC 2022+)  
-- Eclipse CDT (latest stable recommended)  
 - Git
 
 #### Build from command line
@@ -77,24 +75,12 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build . --parallel $(nproc)
 ```
 
-#### Build & run in Eclipse
-
-1. Generate Eclipse project files:
-   ```bash
-   cd build
-   cmake -G "Eclipse CDT4 - Unix Makefiles" ..
-   ```
-2. In Eclipse: File → Import → Existing Projects into Workspace → select project root  
-3. Build → Run as → Local C/C++ Application
-
 #### Run unit tests
 
 ```bash
 cd build
 ctest -V
 ```
-
-or in Eclipse: Run → Run Configurations → C/C++ Unit → Google Test Runner
 
 ### Current Status (Jan 2026)
 
