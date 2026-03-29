@@ -60,11 +60,11 @@ target_link_libraries(crypto_matching_engine
 # target_sources(crypto_matching_engine PRIVATE src/core/SomeCoreFile.cpp)
 
 # Order entry module
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderParser.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderValidator.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderFactory.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderIDGenerator.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderRouter.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderParser.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderValidator.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderFactory.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderIDGenerator.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderRouter.cpp)
 
 # Matching engine module
 # target_sources(crypto_matching_engine PRIVATE src/matchingengine/PriceLevel.cpp)
