@@ -60,16 +60,16 @@ target_link_libraries(crypto_matching_engine
 # target_sources(crypto_matching_engine PRIVATE src/core/SomeCoreFile.cpp)
 
 # Order entry module
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderParser.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderValidator.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderFactory.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderIDGenerator.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderRouter.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderParser.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderValidator.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderFactory.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderIDGenerator.cpp)
+target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderRouter.cpp)
 
 # Matching engine module
 # target_sources(crypto_matching_engine PRIVATE src/matchingengine/PriceLevel.cpp)
 # target_sources(crypto_matching_engine PRIVATE src/matchingengine/OrderQueue.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/matchingengine/OrderBook.cpp)
+target_sources(crypto_matching_engine PRIVATE src/matchingengine/OrderBook.cpp)
 # target_sources(crypto_matching_engine PRIVATE src/matchingengine/MatchEngine.cpp)
 
 # Cancel / Replace module
@@ -86,7 +86,7 @@ target_link_libraries(crypto_matching_engine
 # target_sources(crypto_matching_engine PRIVATE src/feedhandler/FeedDispatcher.cpp)
 
 # Configuration module
-# target_sources(crypto_matching_engine PRIVATE src/config/InstrumentRegistry.cpp)
+target_sources(crypto_matching_engine PRIVATE src/config/InstrumentRegistry.cpp)
 
 # Main entry point
 target_sources(crypto_matching_engine PRIVATE src/main.cpp)

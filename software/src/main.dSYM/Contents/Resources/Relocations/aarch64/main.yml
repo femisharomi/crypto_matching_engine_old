@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/femi/Documents/github/crypto_matching_engine/software/src/main'
+relocations:     []
+...
