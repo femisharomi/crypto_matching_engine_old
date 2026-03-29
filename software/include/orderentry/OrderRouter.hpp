@@ -16,8 +16,8 @@
 #define ORDERROUTER_HPP
 
 #include "Order.hpp"
-#include "OrderBook.hpp"
-#include "InstrumentRegistry.hpp"
+#include "matchingengine/OrderBook.hpp"
+#include "config/InstrumentRegistry.hpp"
 
 class OrderRouter{
     public:

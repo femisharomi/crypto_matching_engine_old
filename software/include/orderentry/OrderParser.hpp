@@ -15,8 +15,8 @@
 #define ORDERPARSER_HPP
 
 #include "Order.hpp"
-#include "InstrumentRegistry.hpp"
-#include <json.hpp>
+#include "config/InstrumentRegistry.hpp"
+#include <nlohmann/json.hpp>
 
 // Class responsible for parsing raw messages into Order objects
 class OrderParser {

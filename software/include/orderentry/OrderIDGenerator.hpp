@@ -14,6 +14,9 @@
 #ifndef ORDERIDGENERATOR_HPP
 #define ORDERIDGENERATOR_HPP
 
+#include <cstdint>
+#include <atomic>
+
 class OrderIDGenerator {
 public:
     OrderIDGenerator(); 

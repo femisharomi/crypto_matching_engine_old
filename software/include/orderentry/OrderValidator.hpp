@@ -14,7 +14,7 @@
 #ifndef ORDERVALIDATOR_HPP
 #define ORDERVALIDATOR_HPP
 
-#include "InstrumentRegistry.hpp"
+#include "config/InstrumentRegistry.hpp"
 #include "Order.hpp"
 
 class OrderValidator {
