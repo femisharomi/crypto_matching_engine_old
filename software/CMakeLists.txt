@@ -67,8 +67,8 @@ target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderIDGenerator.cp
 target_sources(crypto_matching_engine PRIVATE src/orderentry/OrderRouter.cpp)
 
 # Matching engine module
-# target_sources(crypto_matching_engine PRIVATE src/matchingengine/PriceLevel.cpp)
-# target_sources(crypto_matching_engine PRIVATE src/matchingengine/OrderQueue.cpp)
+target_sources(crypto_matching_engine PRIVATE src/matchingengine/PriceLevel.cpp)
+target_sources(crypto_matching_engine PRIVATE src/matchingengine/OrderQueue.cpp)
 target_sources(crypto_matching_engine PRIVATE src/matchingengine/OrderBook.cpp)
 # target_sources(crypto_matching_engine PRIVATE src/matchingengine/MatchEngine.cpp)
 
