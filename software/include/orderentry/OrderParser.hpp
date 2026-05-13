@@ -14,6 +14,7 @@
 #ifndef ORDERPARSER_HPP
 #define ORDERPARSER_HPP
 
+#include <string>
 #include "Order.hpp"
 #include "config/InstrumentRegistry.hpp"
 #include <nlohmann/json.hpp>

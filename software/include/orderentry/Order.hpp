@@ -14,16 +14,13 @@
 #ifndef ORDER_HPP
 #define ORDER_HPP
 
-// Keeping all the includes for Order Entry in this file 
+// Keeping all the includes for Order Entry & other files in this file 
+// Most files access the Order struct so can use it to house common includes
 #include "OrderEnums.hpp"
 #include <string>
 #include <chrono>
-#include <memory>
-#include <atomic>
 #include <cstdint>
-#include <stdexcept>
-#include <unordered_map>
-#include <mutex>
+
 
 struct Order {
     // Large object files 

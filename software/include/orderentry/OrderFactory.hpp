@@ -14,6 +14,7 @@
 #ifndef ORDERFACTORY_HPP
 #define ORDERFACTORY_HPP
 
+#include <string>
 #include "Order.hpp"
 #include "OrderIDGenerator.hpp"
 
